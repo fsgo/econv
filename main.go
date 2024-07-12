@@ -22,10 +22,10 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-var input = flag.String("i", "", "Input file path")
+var input = flag.String("i", "", "Input file path or url")
 var fromEncoding = flag.String("f", "", "Encoding from.\nallow: "+allEncodings)
 var toEncoding = flag.String("t", "", "Encoding to.\nallow: "+allEncodings)
-var timeout = flag.String("timeout", "10s", "Timeout for HTTP Requests")
+var timeout = flag.String("timeout", "30s", "Timeout for HTTP Requests")
 
 func main() {
 	flag.Parse()
